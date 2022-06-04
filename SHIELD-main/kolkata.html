@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./static/styles.css">
+    <script src="./static/script.js"></script>
+
+    <title>SHIELD | Kolkata</title>
+</head>
+<body class="grid-container">
+    <nav>
+        <div id="nav-bar">
+            <button id="menu-btn" class="menu" onclick="toggleMenu()" aria-label="Menu button">
+                <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                    <title>Menu</title>
+                    <path d="M10 80h80a5 5 0 000-10H10a5 5 0 000 10zm0-25h80a5 5 0 000-10H10a5 5 0 000 10zM5 25a5 5 0 005 5h80a5 5 0 000-10H10a5 5 0 00-5 5z" fill="currentColor"/>
+                </svg>
+            </button>
+            <ul id="nav-colapse-items">
+                <li><a href="./">Dashboard</a></li>
+                <li><a href="./login.html">Logout</a></li>
+                <li><a href="./homepage.html">About</a></li>
+            </ul>
+                <div class="brand-logo">
+                    <a href="./homepage.html">
+                        <img src="./static/media/logo.jpg" alt="SHIELD">
+                    </a>
+                </div>
+        </div>
+        <div id="nav-exp-items">
+            <div class="brand-logo">
+                <a href="./homepage.html">
+                    <img src="./static/media/logo.jpg" alt="SHIELD">
+                    <h3>SHIELD</h3>
+                </a>
+            </div>
+            <ul>
+                <li><a href="./">Dashboard</a></li>
+                <li><a href="./login.html">Logout</a></li>
+                <li><a href="./homepage.html">About</a></li>
+            </ul>                            
+        </div>
+    </nav>
+    <main>
+    
+<header id="board" style="background-color: var(--kolkata);">
+    <div class="board-title">
+        <img src="./static/media/cards/kolkata.png" alt="board page graphic">
+        <h1>Kolkata</h1>
+    </div>
+    <div class="lock-unlock">
+        <button style="background-color: var(--kolkata);">
+            <div class="btn-logo">
+                <img src="./static/media/lock-unlock/lock2.png">
+            </div>
+            <div class="btn-label">
+                LOCK
+            </div>
+        </button>
+        <button style="background-color: var(--kolkata);">
+            <div class="btn-logo">
+                <img src="./static/media/lock-unlock/unlock2.png">
+            </div>
+            <div class="btn-label">
+                UNLOCK
+            </div>
+        </button>
+    </div>
+</header>
+<div class="content">
+    <article>
+        <div class="ct-item">
+            <h2>Chairman</h2>
+            <p>Sh. Himanshu Gupta IAS</p>
+        </div>
+        <hr>
+        <div class="ct-item">
+            <h2>Contact</h2>
+            <p>+3890187</p>
+        </div>
+        <hr>
+        <div class="ct-item">
+            <h2>Email</h2>
+            <p>diredu@nic.in</p>
+        </div>
+        <hr>
+        <div class="ct-item">
+            <h2>Website</h2>
+            <p>http://www.edudel.nic.in</p>
+        </div>
+        <hr>
+    </article>
+    <div class="locate">
+        <button onclick="findBoxOnMap()">
+            <div class="locate-btn">
+                <img src="./static/media/locate.png" alt="GPS Pin">
+                <div class="btn-label">LOCATE</div>
+            </div>
+        </button>
+
+    </div>
+</div>
+
+    </main>
+    <footer>
+        &copy; 2022-Present Team Revolutionists
+    </footer>
+</body>
+</html>
